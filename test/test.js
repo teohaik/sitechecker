@@ -28,7 +28,9 @@ describe('Site auto checker', function () {
 
     it('check sites', function (done) {
         web.current.executeRequest(requestConfig, function (error,resp) {
-            expect(resp.statusCode).to.be.equal(200);
+            var res = JSON.parse(resp.body);
+            expect(res.sites).to.not.be.undefined;
+            expect(res.sites).to.be.equal("OK");
             done(error);
         });
     }).timeout(15000);

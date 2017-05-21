@@ -103,7 +103,12 @@ RootController.prototype.checkSites = function(callback)
                     });
                 },
                 function done(error){
-                    return callback(null,self.result(sites));
+                    if(error){
+                        return callback(null,self.result(error));
+                    }
+                    else{
+                        return callback(null,self.result({sites:"OK"}));
+                    }
                 });
         }).unhandle(function() {
             return callback(new web.common.HttpMethodNotAllowed());
@@ -118,7 +123,7 @@ function _sendMail(cb, site, context){
     var data = {
         site:site
     }
-    mailer.getMailer(context).template("site-down").to("teohaik@gmail.com").send(data, function (err, result) {
+    mailer.getMailer(context).template("site-down").subject("SITE DOWN").to("teohaik@gmail.com").send(data, function (err, result) {
         if (err) {
             console.log("error", err);
             return cb(err);
