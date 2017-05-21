@@ -1,0 +1,22 @@
+{
+  "name": "sample-web-app",
+  "version": "0.1.0",
+  "description": "Teohaik auto site checker",
+  "main": "server.js",
+  "repository": "",
+  "author": "",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "async": "^2.4.0",
+    "mocha": "^3.4.1",
+    "most-data": "*",
+    "most-data-sqlite": "*",
+    "most-query": "*",
+    "most-web": "*",
+    "most-web-mailer": "^0.1.6",
+    "most-web-md": "*",
+    "node-cron": "^1.1.3"
+  }
+}

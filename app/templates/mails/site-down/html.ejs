@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.css" />
+</head>
+<body>
+<div class="page-header">
+    <h3>Site Health Report</h3>
+</div>
+<p>Dear administrator,</p>
+
+<p>ATTENTION!</p>
+<p>Your site: </p>
+<p>
+    <a href="<%=data.site.url%>">
+        <%=data.site.url%>
+    </a>
+
+</p>
+<p>Is DOWN</p>
+<p>Please check</p>
+
+<div>
+    <p>
+    <a href="<%=data.site.url%>">
+        Automatic site checker
+    </a></p>
+    <p>Created by Teohaik</p>
+</div>
+
+</body>
+</html>

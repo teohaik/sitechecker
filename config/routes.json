@@ -1,0 +1,10 @@
+[
+    { "url":"/", "controller":"root", "action":"index" },
+    { "url":"/:action.html", "controller":"root" },
+    { "url":"/:controller/:action.html", "mime":"text/html", "static":true },
+    { "url":"/:controller/:action.json", "mime":"application/json" },
+    { "url":"/:controller/:action.xml" },
+    { "url":"/:controller/:id/:action.html", "mime":"text/html", "static":true },
+    { "url":"/:controller/:id/:action.xml", "mime":"text/xml" },
+    { "url":"/:controller/:id/:action.json", "mime":"application/json" }
+]
