@@ -31,8 +31,8 @@
         "mail": {
             "service":"gmail",
             "auth": {
-                "user":"mail@gmail.com",
-                "pass":"pass"
+                "user":"user@gmail.com",
+                "pass":"yourpass"
             }
         }
     },

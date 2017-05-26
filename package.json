@@ -1,5 +1,5 @@
 {
-  "name": "sample-web-app",
+  "name": "teohaik-site-checker",
   "version": "0.1.0",
   "description": "Teohaik auto site checker",
   "main": "server.js",
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "async": "^2.4.0",
+    "minimist": "^1.2.0",
     "mocha": "^3.4.1",
     "most-data": "*",
     "most-data-sqlite": "*",

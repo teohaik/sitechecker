@@ -1,0 +1,16 @@
+{"level":"info","message":"0: C:\\Program Files\\nodejs\\node.exe","timestamp":"2017-05-26T20:58:18.920Z"}
+{"level":"info","message":"1: C:\\Users\\Thodoris\\WebstormProjects\\site-checker\\server.js","timestamp":"2017-05-26T20:58:18.921Z"}
+{"level":"info","message":"2: mail=sitechecker@gmailcom","timestamp":"2017-05-26T20:58:18.921Z"}
+{"level":"info","message":"3: pass=test","timestamp":"2017-05-26T20:58:18.921Z"}
+{"level":"info","message":"4: receiver=teohaik@gmail.com","timestamp":"2017-05-26T20:58:18.922Z"}
+{"level":"info","message":"0: C:\\Program Files\\nodejs\\node.exe","timestamp":"2017-05-26T20:58:59.023Z"}
+{"level":"info","message":"1: C:\\Users\\Thodoris\\WebstormProjects\\site-checker\\server.js","timestamp":"2017-05-26T20:58:59.024Z"}
+{"level":"info","message":"2: mail=sitechecker@gmailcom","timestamp":"2017-05-26T20:58:59.024Z"}
+{"level":"info","message":"3: pass=test","timestamp":"2017-05-26T20:58:59.024Z"}
+{"level":"info","message":"4: receiver=teohaik@gmail.com","timestamp":"2017-05-26T20:58:59.024Z"}
+{"level":"info","message":"0: C:\\Program Files\\nodejs\\node.exe","timestamp":"2017-05-26T20:59:51.199Z"}
+{"level":"info","message":"1: C:\\Users\\Thodoris\\WebstormProjects\\site-checker\\server.js","timestamp":"2017-05-26T20:59:51.200Z"}
+{"level":"info","message":"2: mailuser=teohaiksitechecker@gmailcom","timestamp":"2017-05-26T20:59:51.200Z"}
+{"level":"info","message":"3: pass=","timestamp":"2017-05-26T20:59:51.200Z"}
+{"level":"info","message":"4: receiver=teohaik@gmail.com","timestamp":"2017-05-26T20:59:51.200Z"}
+{"level":"info","message":"5: cc=english.sf.gr@gmail.com","timestamp":"2017-05-26T20:59:51.200Z"}

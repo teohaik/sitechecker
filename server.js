@@ -12,9 +12,24 @@ web.current.start({
 var logger = new (winston.Logger)({
     transports: [
         new (winston.transports.Console)(),
-        new (winston.transports.File)({ filename: '/logs/siteCheckerLog.log' })
+        new (winston.transports.File)({ filename: './logs/siteCheckerLog.log' })
     ]
 });
+
+var parseArgs  = require('minimist');
+
+var args = parseArgs(process.argv.slice(2), {string:true});
+if(!args.mail || !args.pass || !args.to || !args.cc){
+    winston.exception("Invalid arguments!");
+    process.exit()
+}
+else {
+    process.env.mail = args.mail;
+    process.env.pass = args.pass;
+    process.env.cc = args.cc;
+    process.env.to = args.to;
+}
+
 
 var requestConfig = {
     url:"/Root/checkSites.json",
@@ -30,9 +45,9 @@ var requestConfig = {
     }
 }
 
-cron.schedule('* *30 * * * *', function(){ //every 15 minutes
+cron.schedule('* */30 * * * *', function(){ //every 15 minutes
     web.current.executeRequest(requestConfig, function (error,resp) {
         var res = JSON.parse(resp.body);
-        winston.info(res);
+        logger.info(res);
     });
 });
