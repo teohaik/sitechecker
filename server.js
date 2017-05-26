@@ -5,7 +5,7 @@ var winston = require('winston');
  * start application
  */
 web.current.start({
-    port:process.env.PORT || 5000,
+    port:process.env.PORT ? process.env.PORT: 5000,
     bind:process.env.IP || '127.0.0.1'
 });
 
