@@ -17,6 +17,7 @@
     "most-web": "*",
     "most-web-mailer": "^0.1.6",
     "most-web-md": "*",
-    "node-cron": "^1.1.3"
+    "node-cron": "^1.1.3",
+    "winston": "^2.3.1"
   }
 }
