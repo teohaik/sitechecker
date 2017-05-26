@@ -1,1 +1,1 @@
-node server.js --to teohaik@gmail.com --cc english.sf.gr@gmail.com
+web: node server.js --to teohaik@gmail.com --cc english.sf.gr@gmail.com
