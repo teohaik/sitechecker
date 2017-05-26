@@ -19,13 +19,11 @@ var logger = new (winston.Logger)({
 var parseArgs  = require('minimist');
 
 var args = parseArgs(process.argv.slice(2), {string:true});
-if(!args.mail || !args.pass || !args.to || !args.cc){
+if( !args.to || !args.cc){
     winston.exception("Invalid arguments!");
     process.exit()
 }
 else {
-    process.env.mail = args.mail;
-    process.env.pass = args.pass;
     process.env.cc = args.cc;
     process.env.to = args.to;
 }

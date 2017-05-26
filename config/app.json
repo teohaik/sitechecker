@@ -31,8 +31,8 @@
         "mail": {
             "service":"gmail",
             "auth": {
-                "user":"user@gmail.com",
-                "pass":"yourpass"
+                "user":"teohaiksitechecker@gmail.com",
+                "pass":"SuperSiteChecker!@#"
             }
         }
     },

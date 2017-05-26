@@ -124,13 +124,7 @@ function _sendMail(cb, site, context){
         site:site
     }
 
-    mailer.getMailer(context).transporter({
-        service:'gmail',
-        auth:{
-            user:process.env.mail,
-            pass:process.env.pass
-        }
-    }).template("site-down").subject("SITE DOWN").to(process.env.to).cc(process.env.cc).send(data, function (err, result) {
+    mailer.getMailer(context).template("site-down").subject("SITE DOWN").to(process.env.to).cc(process.env.cc).send(data, function (err, result) {
         if (err) {
             console.log("error", err);
             return cb(err);

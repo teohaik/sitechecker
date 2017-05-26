@@ -12,6 +12,8 @@ describe('Site auto checker', function () {
 
     before(function (done) {
         web.current.execute(function (context) {
+            process.env.cc = "chaikalis@uom.gr";
+            process.env.to = "teohaik@gmail.com";
             requestConfig = {
                 url:"/Root/checkSites.json",
                 method:"POST",
