@@ -11,7 +11,7 @@
   "dependencies": {
     "async": "^2.4.0",
     "minimist": "^1.2.0",
-    "mocha": "^3.4.1",
+    "mocha": "^6.0.0",
     "most-data": "*",
     "most-data-sqlite": "*",
     "most-query": "*",
